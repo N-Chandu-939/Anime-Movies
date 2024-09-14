@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Ensure you have a stylesheet for styling -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, <%= user %></h1>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </div>
+
+        <h2>Featured Movies</h2>
+        <div class="movies">
+            <!-- Example movie entries -->
+            <div class="movie">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2024/3/401805335/VX/LQ/BV/55589454/ws00471narutomangawallposterhero-500x500.jpg" alt="Movie 1">
+                <div class="movie-title">Naruto</div>
+            </div>
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sbaRrYuxa-kkskUU0QoZ2ppTJbA1uh2bQw&s" alt="Movie 2">
+                <div class="movie-title">one piece</div>
+            </div>
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsBC_FNp7SNRAoguajtcZdXO1244pf7dWrIA&s" alt="Movie 3">
+                <div class="movie-title">Bleach</div>
+            </div>
+            <!-- Add more movie entries as needed -->
+        </div>
+    </div>
+</body>
+</html>
